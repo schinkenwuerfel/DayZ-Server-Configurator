@@ -15,8 +15,8 @@ class SteamManager:
             print("SteamCMD is already installed!")
         self.steam = steam
 
-    def login(self, user, password):
-        self.steam.login(user, password)
+    def login(self):
+        self.steam.login()
 
     def install_day_z_server(self, install_dir):
         self.steam.app_update(223350, install_dir=install_dir)

@@ -16,7 +16,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     steamManager = SteamManager()
-    steamManager.login(args.steam_user, args.steam_password)
+    steamManager.login()
 
     steamManager.install_day_z_server(args.server_dir)
 
